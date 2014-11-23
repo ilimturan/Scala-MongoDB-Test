@@ -1,12 +1,15 @@
-package com.ilim.mongodbtest
+package com.ilim
+
 /**
  * Created by ilimturan on 23/11/14.
  */
-import org.joda.time.DateTime
+
+import com.ilim.model.{Book, BookBuilder}
 import com.mongodb.casbah.Imports._
 import com.mongodb.casbah.commons.conversions.scala.{RegisterConversionHelpers, RegisterJodaTimeConversionHelpers}
+import org.joda.time.DateTime
 
-object Test extends App {
+object TestApp extends App {
 
   // fix datetime conversion :(
   RegisterConversionHelpers()

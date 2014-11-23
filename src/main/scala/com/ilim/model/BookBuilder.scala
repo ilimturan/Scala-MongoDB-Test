@@ -1,9 +1,12 @@
-package com.ilim.mongodbtest
+package com.ilim.model
+
 /**
  * Created by ilimturan on 23/11/14.
  */
-import org.joda.time.DateTime
+
+import com.ilim.db.MongoFactory
 import com.mongodb.casbah.Imports._
+import org.joda.time.DateTime
 
 case class Book(isbn: Long, name: String, date: DateTime)
 

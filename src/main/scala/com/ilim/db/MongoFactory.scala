@@ -1,10 +1,9 @@
-package com.ilim.mongodbtest
+package com.ilim.db
+
 /**
  * Created by ilimturan on 23/11/14.
  */
-import com.mongodb.casbah.MongoCollection
 import com.mongodb.casbah.MongoConnection
-import com.mongodb.casbah.Imports._
 
 object MongoFactory{
 
