@@ -9,7 +9,7 @@ case class Book(isbn: Long, name: String, date: DateTime)
 
 object BookBuilder {
 
-  // scala object to mongodb object
+  // scala object convert to mongodb object
   def buildDbBook(book: Book): MongoDBObject = {
     val builder = MongoDBObject.newBuilder
     builder += "isbn" -> book.isbn
@@ -18,7 +18,7 @@ object BookBuilder {
     builder.result
   }
 
-  // mongodb object to scala object
+  // mongodb object convert to scala object
   def convertDbBookToBook(obj: MongoDBObject): Book = {
     Book(obj.getAs[Long]("isbn").get, obj.getAs[String]("name").get, obj.getAs[DateTime]("date").get )
   }
